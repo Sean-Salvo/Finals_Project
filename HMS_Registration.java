@@ -1,5 +1,6 @@
 
-import java.util.LinkedList;
+import java.awt.Image;
+import javax.swing.ImageIcon;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -16,6 +17,10 @@ public class HMS_Registration extends javax.swing.JFrame {
      */
     public HMS_Registration() {
         initComponents();
+        
+        Image image = new ImageIcon(this.getClass().getResource("Synergy (Resized Logo).jpg")).getImage();
+        this.setIconImage(image);
+        
     }
 
     /**
@@ -28,15 +33,16 @@ public class HMS_Registration extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jPanel2 = new javax.swing.JPanel();
+        Create_Account = new javax.swing.JLabel();
         fName = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        lName = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        email = new javax.swing.JTextField();
+        jLabel4 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        lName = new javax.swing.JTextField();
+        email = new javax.swing.JTextField();
         password = new javax.swing.JPasswordField();
         jLabel7 = new javax.swing.JLabel();
         cPassword = new javax.swing.JPasswordField();
@@ -45,125 +51,111 @@ public class HMS_Registration extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         address = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        gender = new javax.swing.JComboBox<>();
         jLabel11 = new javax.swing.JLabel();
         birthday = new javax.swing.JTextField();
         jLabel12 = new javax.swing.JLabel();
-        jComboBox2 = new javax.swing.JComboBox<>();
+        roles = new javax.swing.JComboBox<>();
         jLabel13 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
-        jSeparator1 = new javax.swing.JSeparator();
-        home = new javax.swing.JLabel();
-        login = new javax.swing.JLabel();
-        aboutUs = new javax.swing.JLabel();
-        ContactUs = new javax.swing.JLabel();
+        department = new javax.swing.JComboBox<>();
         TermsConditions = new javax.swing.JCheckBox();
-        jButton1 = new javax.swing.JButton();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
-        jLabel18 = new javax.swing.JLabel();
-        jSeparator4 = new javax.swing.JSeparator();
-        facebook = new javax.swing.JLabel();
-        twitter = new javax.swing.JLabel();
-        instagram = new javax.swing.JLabel();
-        home1 = new javax.swing.JLabel();
+        register = new javax.swing.JButton();
+        back = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Synergy: HMS Registration");
+        setTitle("Synergy: Create Account");
         setResizable(false);
 
-        jLabel1.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+
+        jPanel2.setBackground(new java.awt.Color(21, 41, 157));
+
+        Create_Account.setFont(new java.awt.Font("Karma", 1, 36)); // NOI18N
+        Create_Account.setForeground(new java.awt.Color(229, 229, 0));
+        Create_Account.setText("Create Account");
+
+        jLabel1.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel1.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("First Name:");
 
-        jLabel2.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jLabel2.setText("Hospital Management System");
-
-        jLabel3.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
-        jLabel3.setText("Registration");
-
-        jLabel4.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
-        jLabel4.setText("Last Name:");
-
-        jLabel5.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel5.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Email:");
 
-        jLabel6.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel4.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setText("Last Name:");
+
+        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Password:");
 
-        jLabel7.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel7.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel7.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Confirmed Password:");
 
-        jLabel8.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel8.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel8.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Phone Number:");
 
-        jLabel9.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel9.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel9.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Address:");
 
-        jLabel10.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel10.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel10.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Gender:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other"}));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        gender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Male", "Female", "Other"}));
+        gender.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                genderActionPerformed(evt);
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel11.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel11.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Date of Birth:");
 
-        jLabel12.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel12.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel12.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Role:");
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Role #1", "Role #2", "Role #3"}));
-        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+        roles.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Role #1", "Role #2", "Role #3"}));
+        roles.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox2ActionPerformed(evt);
+                rolesActionPerformed(evt);
             }
         });
 
-        jLabel13.setFont(new java.awt.Font("Calibri", 0, 12)); // NOI18N
+        jLabel13.setBackground(new java.awt.Color(0, 0, 0));
+        jLabel13.setFont(new java.awt.Font("Karma", 1, 24)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Department:");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Department #1", "Department #2", "Department #3"}));
-        jComboBox3.addActionListener(new java.awt.event.ActionListener() {
+        department.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Department #1", "Department #2", "Department #3"}));
+        department.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox3ActionPerformed(evt);
+                departmentActionPerformed(evt);
             }
         });
 
-        home.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        home.setText("Home");
-        home.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                homeMouseClicked(evt);
-            }
-        });
-
-        login.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        login.setText("Login");
-        login.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                loginMouseClicked(evt);
-            }
-        });
-
-        aboutUs.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        aboutUs.setText("About Us");
-        aboutUs.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                aboutUsMouseClicked(evt);
-            }
-        });
-
-        ContactUs.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        ContactUs.setText("Contact Us");
-        ContactUs.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ContactUsMouseClicked(evt);
-            }
-        });
-
+        TermsConditions.setFont(new java.awt.Font("Karma", 1, 18)); // NOI18N
+        TermsConditions.setForeground(new java.awt.Color(255, 255, 255));
         TermsConditions.setText("I agree to the terms and conditions");
         TermsConditions.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,130 +163,82 @@ public class HMS_Registration extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setText("Register");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        register.setText("Register");
+        register.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                registerActionPerformed(evt);
             }
         });
 
-        jLabel18.setText("@HMS System 2023");
-
-        facebook.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        facebook.setText("Facebook");
-        facebook.addMouseListener(new java.awt.event.MouseAdapter() {
+        back.setBackground(new java.awt.Color(0, 0, 0));
+        back.setFont(new java.awt.Font("Karla", 1, 55)); // NOI18N
+        back.setForeground(new java.awt.Color(255, 255, 255));
+        back.setText("<");
+        back.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                facebookMouseClicked(evt);
+                backMouseClicked(evt);
             }
         });
 
-        twitter.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        twitter.setText("Twitter");
-        twitter.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                twitterMouseClicked(evt);
-            }
-        });
-
-        instagram.setFont(new java.awt.Font("Segoe UI", 2, 12)); // NOI18N
-        instagram.setText("Instagram");
-        instagram.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                instagramMouseClicked(evt);
-            }
-        });
-
-        home1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        home1.setText("Synergy");
-        home1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                home1MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.TRAILING)
-            .addComponent(jSeparator3)
-            .addComponent(jSeparator4)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel18)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
-                        .addComponent(facebook)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(twitter)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(instagram))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(home1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(home)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(aboutUs)
-                        .addGap(9, 9, 9)
-                        .addComponent(ContactUs)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(login)))
-                .addGap(14, 14, 14))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel13)
-                        .addComponent(jComboBox2, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel12)
-                        .addComponent(jLabel11)
-                        .addComponent(jLabel10)
-                        .addComponent(jLabel9)
-                        .addComponent(jLabel8)
-                        .addComponent(jLabel7)
-                        .addComponent(jLabel6)
-                        .addComponent(email)
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(department, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(roles, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(birthday, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(gender, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(address, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(phoneNum, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(cPassword, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(password, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(email, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lName, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
+                                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel12, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel9, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.LEADING))
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(fName, javax.swing.GroupLayout.Alignment.LEADING))
+                        .addGap(69, 69, 69))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(TermsConditions)
+                            .addComponent(register)
+                            .addComponent(jLabel13))
+                        .addGap(0, 270, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel4)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel1)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(fName)
-                        .addComponent(password)
-                        .addComponent(lName)
-                        .addComponent(jLabel5)
-                        .addComponent(cPassword)
-                        .addComponent(phoneNum)
-                        .addComponent(address)
-                        .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(birthday)
-                        .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 299, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(TermsConditions)
-                    .addComponent(jButton1)
-                    .addComponent(jLabel3))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Create_Account)
+                .addGap(115, 115, 115)
+                .addComponent(back)
+                .addGap(33, 33, 33))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(home)
-                    .addComponent(login)
-                    .addComponent(ContactUs)
-                    .addComponent(aboutUs)
-                    .addComponent(home1))
-                .addGap(5, 5, 5)
-                .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Create_Account)
+                    .addComponent(back, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -302,62 +246,82 @@ public class HMS_Registration extends javax.swing.JFrame {
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(email, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel6)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(password, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel8)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(phoneNum, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel9)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(address, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel10)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(gender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel11)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(birthday, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel12)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(roles, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel13)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(department, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(TermsConditions)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(register)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+
+        jScrollPane2.setViewportView(jPanel2);
+
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Synergy (Resized Logo).jpg"))); // NOI18N
+
+        jLabel15.setFont(new java.awt.Font("Jomhuria", 0, 70)); // NOI18N
+        jLabel15.setForeground(new java.awt.Color(21, 41, 157));
+        jLabel15.setText("Synergy");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(35, 35, 35)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(48, 48, 48)
+                        .addComponent(jLabel15))
+                    .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 199, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 76, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 620, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(124, 124, 124)
+                .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 148, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel18)
-                    .addComponent(facebook)
-                    .addComponent(twitter)
-                    .addComponent(instagram))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jSeparator4, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(7, Short.MAX_VALUE))
-            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel1Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(jLabel15)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -368,88 +332,89 @@ public class HMS_Registration extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    private void registerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerActionPerformed
 
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
-
-    private void jComboBox3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox3ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-
-        // OBJECTS - For showing errors [7]
-        Error_UnmatchedPassword errorMSG_UnmatchedPassword = new Error_UnmatchedPassword(); // if password and cPassword do NOT match. [1]
-        Error_passwordNoLetterNumberSymbol errorMSG_passwordLetterNumberSymbol = new Error_passwordNoLetterNumberSymbol(); // if password does NOT have a letter, number, symbol. [2]
-        Error_passwordLength errorMSG_passwordLength = new Error_passwordLength(); // if password's length is NOT 6 in length. [3]
-        Error_phoneNumLetterSymbol errorMSG_phoneNum = new Error_phoneNumLetterSymbol(); // if phone number contains letters or symbols. [4]
-        Error_phoneNumLength errorMSG_phoneNumLength = new Error_phoneNumLength(); // if phone number's length is NOT 11 numbers in length. [5]
-        Error_UnchekedTC errorMSG_UncheckedTC = new Error_UnchekedTC(); // if Terms & Condition is unchecked. [6]
-        Error_EmptyTextField errorMSG_EmptyTextField = new Error_EmptyTextField(); // if TextField is Empty. [7]
-        // OBJECTS - For showing errors [7]
-
-        //--------------------------------------------------------------------------------------------------------------------------------------------------------------------//
+        // Object to setVisibility and append displayError specific Messages
+        Error_Display errorMSG = new Error_Display();
+        //Total amount of errors to be checked by the program: [7]
         
-        if (!password.getText().equals(cPassword.getText())) { // [1]
-            errorMSG_UnmatchedPassword.setVisible(true);
+        //-------------------------------------------------------------------------------------------
+        
+        if (fName.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (lName.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (email.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (password.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (cPassword.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (phoneNum.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (address.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+        } else if (birthday.getText().isEmpty()) {
+            errorMSG.setVisible(true);
+            errorMSG.displayError.append("Empty TextField Error: \nOne or More TextField is Empty.");
+
         } else {
 
-            if (!password.getText().matches(".*[a-zA-Z].*") || !password.getText().matches(".*\\d.*") || !password.getText().matches(".*[^a-zA-Z\\d].*")) { // [2]
-                errorMSG_passwordLetterNumberSymbol.setVisible(true);
+            if (!password.getText().equals(cPassword.getText())) {
+                errorMSG.setVisible(true);
+                errorMSG.displayError.append("Mismatch Password Error: \nPassword and Confirmed Password do NOT match.");
 
             } else {
 
-                if (password.getText().length() <= 5) { // [3]
-                    errorMSG_passwordLength.setVisible(true);
+                if (!password.getText().matches(".*[a-zA-Z].*") || !password.getText().matches(".*\\d.*") || !password.getText().matches(".*[^a-zA-Z\\d].*")) {
+                    errorMSG.setVisible(true);
+                    errorMSG.displayError.append("Missing Symbol and/or Number Error: \nPassword requires atleast ONE Symbol and ONE Number.");
 
                 } else {
 
-                    if (phoneNum.getText().matches(".*[a-zA-Z].*") || phoneNum.getText().matches(".*[^\\d].*")) { // [4]
-                        errorMSG_phoneNum.setVisible(true);
+                    if (password.getText().length() <= 5) { // [4]
+                        errorMSG.setVisible(true);
+                        errorMSG.displayError.append("Passowrd Length Error: \nPassword must atleast have 6 characters.");
 
                     } else {
 
-                        if (phoneNum.getText().length() != 11) { // [5]
-                            errorMSG_phoneNumLength.setVisible(true);
+                        if (phoneNum.getText().matches(".*[a-zA-Z].*") || phoneNum.getText().matches(".*[^\\d].*")) {
+                            errorMSG.setVisible(true);
+                            errorMSG.displayError.append("Phone Number Letter and/or Symbol Error: \nPhone Number TextField has a Letter and/or Number in it.");
 
                         } else {
 
-                            if (!TermsConditions.isSelected()) { // [6]
-                                errorMSG_UncheckedTC.setVisible(true);
+                            if (phoneNum.getText().length() != 11) {
+                                errorMSG.setVisible(true);
+                                errorMSG.displayError.append("Phone Number Length Error: \nPhone Number must have and should be equal to 11 digits.");
 
                             } else {
 
-                                if (fName.getText().isEmpty()) { // to check if all jTextfields are NOT empty.
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (lName.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (email.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (password.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (cPassword.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (phoneNum.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (address.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
-                                } else if (birthday.getText().isEmpty()) {
-                                    errorMSG_EmptyTextField.setVisible(true);
+                                if (!TermsConditions.isSelected()) {
+                                    errorMSG.setVisible(true);
+                                    errorMSG.displayError.append("TOC unchecked Error: \nTerms And Condition Must be checked before you can create an account.");
 
                                 } else {
 
                                     System.out.println("Program Successful"); // Temporary SysOut code for checking..
                                     // enter code here to open another JFrame..
+
                                 }
 
                             }
@@ -463,51 +428,30 @@ public class HMS_Registration extends javax.swing.JFrame {
             }
 
         }
-
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_registerActionPerformed
 
     private void TermsConditionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TermsConditionsActionPerformed
 
     }//GEN-LAST:event_TermsConditionsActionPerformed
 
-    private void homeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_homeMouseClicked
-        System.out.println("Directing to..");
-        // home
-    }//GEN-LAST:event_homeMouseClicked
-
-    private void aboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aboutUsMouseClicked
-        System.out.println("Directing to..");
-        // about us
-    }//GEN-LAST:event_aboutUsMouseClicked
-
-    private void ContactUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ContactUsMouseClicked
-        System.out.println("Directing to..");
-        // contact us
-    }//GEN-LAST:event_ContactUsMouseClicked
-
-    private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
-        System.out.println("Directing to..");
-        // login
-    }//GEN-LAST:event_loginMouseClicked
-
-    private void facebookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_facebookMouseClicked
-        System.out.println("Directing to..");
-        // login
-    }//GEN-LAST:event_facebookMouseClicked
-
-    private void twitterMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_twitterMouseClicked
-        System.out.println("Directing to..");
-        // twitter
-    }//GEN-LAST:event_twitterMouseClicked
-
-    private void instagramMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_instagramMouseClicked
-        System.out.println("Directing to..");
-        // instagram
-    }//GEN-LAST:event_instagramMouseClicked
-
-    private void home1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_home1MouseClicked
+    private void departmentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_departmentActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_home1MouseClicked
+    }//GEN-LAST:event_departmentActionPerformed
+
+    private void rolesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rolesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rolesActionPerformed
+
+    private void genderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_genderActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_genderActionPerformed
+
+    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
+        
+        System.out.println("Redirecting To..");
+        //Enter code here to open another JFrame..
+        
+    }//GEN-LAST:event_backMouseClicked
 
     /**
      * @param args the command line arguments
@@ -523,16 +467,24 @@ public class HMS_Registration extends javax.swing.JFrame {
                 if ("Nimbus".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
+
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(HMS_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HMS_Registration.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(HMS_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HMS_Registration.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(HMS_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HMS_Registration.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
+
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(HMS_Registration.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(HMS_Registration.class
+                    .getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -546,30 +498,23 @@ public class HMS_Registration extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ContactUs;
+    private javax.swing.JLabel Create_Account;
     private javax.swing.JCheckBox TermsConditions;
-    private javax.swing.JLabel aboutUs;
     private javax.swing.JTextField address;
+    private javax.swing.JLabel back;
     private javax.swing.JTextField birthday;
     private javax.swing.JPasswordField cPassword;
+    private javax.swing.JComboBox<String> department;
     private javax.swing.JTextField email;
     private javax.swing.JTextField fName;
-    private javax.swing.JLabel facebook;
-    private javax.swing.JLabel home;
-    private javax.swing.JLabel home1;
-    private javax.swing.JLabel instagram;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
+    private javax.swing.JComboBox<String> gender;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -577,14 +522,12 @@ public class HMS_Registration extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextField lName;
-    private javax.swing.JLabel login;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField phoneNum;
-    private javax.swing.JLabel twitter;
+    private javax.swing.JButton register;
+    private javax.swing.JComboBox<String> roles;
     // End of variables declaration//GEN-END:variables
 }
